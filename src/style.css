@@ -6,12 +6,19 @@ form {
   display: inline;
   text-align: left;
 }
+ul {
+  list-style-type: none;
+}
 #card {
-  margin: 0 auto;
+  margin: 60px auto;
+  border-radius: 16px;
+  padding: 40px;
 }
 #search-city {
   width: 400px;
+  border-radius: 6px;
 }
 #search-button {
   width: 200px;
+  border-radius: 6px;
 }
