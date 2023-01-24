@@ -1,7 +1,6 @@
 .app {
   margin: 60px auto;
   max-width: 800px;
-  border-radius: 20px;
 }
 .container {
   background: #edf7fa;
@@ -60,6 +59,7 @@ form {
   font-size: 40px;
   font-weight: 700;
   color: #43bfc7;
+  margin-bottom: 0;
 }
 
 .temperature {
