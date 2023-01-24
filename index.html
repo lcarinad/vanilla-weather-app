@@ -12,9 +12,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/bc9c64e435.js" crossorigin="anonymous"></script>
   </head>
   <body>
-
+<div class="container">
   <div class="card w-75" id="card" >
   <div class="card-header">
     <h1>
@@ -45,22 +46,51 @@ value="search">
             Wind: <strong>8.05km/h</strong>
           </li>
         </ul>
-      </div>
-  <div class="temperature-container d-flex justify-content-end">
+        </div>
+<div class="temperature-container d-flex justify-content-end">
     <div>
       <span class="temperature">14</span>
       <span class="unit">°C</span>
     </div>
-    
     </div>
-    <div class="card-text" class="Forecast">
+      </div>
+  
+      <div class="row weekday-name">
+       
+        <div class="col day-of-week Mon">Monday</div> 
+        <div class="col day-of-week Tues">Tuesday</div> 
+        <div class="col day-of-week Wed">Wednesday</div> 
+        <div class="col day-of-week Thurs">Thursday</div> 
+        <div class="col day-of-week Fri">Friday</div> 
+        </div>
+      <div class="row weekday-weather-icon">
+        <div class="col day-of-week Mon"><i class="fa-solid fa-cloud"></i></div> 
+        <div class="col day-of-week Tues"><i class="fa-solid fa-sun"></i></div> 
+        <div class="col day-of-week Wed"><i class="fa-solid fa-snowflake"></i></div> 
+        <div class="col day-of-week Thurs"><i class="fa-solid fa-cloud-rain"></i></div> 
+        <div class="col day-of-week Fri"><i class="fa-solid fa-sun"></i></div> 
+      </div>
+      <div class="row weekday-temperature">
+        <div class="col day-of-week Mon"><span class="forecast-temperature-max">15°</span><span class="forecast-temperature-min">  9°</span></div> 
+        <div class="col day-of-week Tues"><span class="forecast-temperature-max">15°</span><span class="forecast-temperature-min">  9°</span></div> 
+        <div class="col day-of-week Wed"><span class="forecast-temperature-max">15°</span><span class="forecast-temperature-min">  9°</span></div> 
+        <div class="col day-of-week Thurs"><span class="forecast-temperature-max">15°</span><span class="forecast-temperature-min">  9°</span></div> 
+        <div class="col day-of-week Fri"><span class="forecast-temperature-max">15°</span><span class="forecast-temperature-min">  9°</span></div> 
+      </div>
+       
 
-    </div>
-    
+      </div>
+     <div class="card-footer">
+  <p>
+    This project was coded by Lauren DeLago and is open-sources on GitHub and hosted on Netlify
+  </p>
+</div>
   </div>
+ 
+
 </div>
     
- 
+ </div>
         </body>
      
     <script src="src/app.js"></script>
