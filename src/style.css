@@ -1,6 +1,19 @@
+.app {
+  margin: 60px auto;
+  max-width: 800px;
+  border-radius: 20px;
+}
+.container {
+  background: #edf7fa;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60 auto;
+  width: 100%;
+}
 h1 {
-  color: blue;
+  color: #ff8364;
   text-align: center;
+  font-family: "Covered By Your Grace", cursive;
 }
 form {
   display: inline;
@@ -10,16 +23,27 @@ ul {
   list-style-type: none;
 }
 
-#card {
+.card {
   margin: 60px auto;
   border-radius: 16px;
   padding: 40px;
 }
-#search-city {
-  width: 400px;
+.search-city {
+  background: #edf7fa;
+  border: none;
+
   border-radius: 6px;
+  font-size: 16px;
+  height: 30px;
+  line-height: 20px;
+  padding: 15px 20px;
 }
-#search-button {
+.search-button {
+  background: #5f6caf;
+  border: none;
+  font-size: 16px;
+  height: 30px;
+
   width: 200px;
   border-radius: 6px;
 }
