@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -28,13 +28,13 @@
       <div class="app">
         <div class="container">
           <div class="card w-75" id="card">
-            <div class="card-header">
-              <h1>Woof's the Weather?🐶</h1>
+            <div class="card-header bg-white">
+              <p class="app-name">Woof's the Weather?🐶</p>
               <form>
                 <input
                   type="text"
                   class="search-city"
-                  placeholder="🐾Enter a city 🐾"
+                  placeholder="Enter a city 🐾🐾"
                   autofocus="on"
                 />
               </form>
@@ -43,16 +43,14 @@
             <div class="card-body weather-info">
               <div class="row">
                 <div class="col-6">
-                  <h3 class="card-title">Pawtucket</h3>
+                  <p class="card-title">Pawtucket</p>
                   <ul>
                     <li>
-                      <span> Monday 14:44 </span>
+                      <span class="day-time"> Monday 14:44 </span>
                       , clear sky
                     </li>
-                    <li>
-                      Humidity: <strong>32%</strong> Wind:
-                      <strong>8.05km/h</strong>
-                    </li>
+                    <li>Humidity: <strong>32%</strong></li>
+                    <li>Wind: <strong>8.05km/h</strong></li>
                   </ul>
                 </div>
                 <div class="temperature-container d-flex justify-content-end">
@@ -62,62 +60,67 @@
                   </div>
                 </div>
               </div>
-
-              <div class="row weekday-name">
-                <div class="col day-of-week Mon">Monday</div>
-                <div class="col day-of-week Tues">Tuesday</div>
-                <div class="col day-of-week Wed">Wednesday</div>
-                <div class="col day-of-week Thurs">Thursday</div>
-                <div class="col day-of-week Fri">Friday</div>
-              </div>
-              <div class="row weekday-weather-icon">
-                <div class="col day-of-week Mon">
-                  <i class="fa-solid fa-cloud"></i>
+              <div class="five-day-forecast">
+                <div class="row weekday-name">
+                  <div class="col day-of-week Mon">Monday</div>
+                  <div class="col day-of-week Tues">Tuesday</div>
+                  <div class="col day-of-week Wed">Wednesday</div>
+                  <div class="col day-of-week Thurs">Thursday</div>
+                  <div class="col day-of-week Fri">Friday</div>
                 </div>
-                <div class="col day-of-week Tues">
-                  <i class="fa-solid fa-sun"></i>
+                <div class="row weekday-weather-icon">
+                  <div class="col day-of-week Mon">
+                    <i class="fa-solid fa-cloud"></i>
+                  </div>
+                  <div class="col day-of-week Tues">
+                    <i class="fa-solid fa-sun"></i>
+                  </div>
+                  <div class="col day-of-week Wed">
+                    <i class="fa-solid fa-snowflake"></i>
+                  </div>
+                  <div class="col day-of-week Thurs">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                  </div>
+                  <div class="col day-of-week Fri">
+                    <i class="fa-solid fa-sun"></i>
+                  </div>
                 </div>
-                <div class="col day-of-week Wed">
-                  <i class="fa-solid fa-snowflake"></i>
-                </div>
-                <div class="col day-of-week Thurs">
-                  <i class="fa-solid fa-cloud-rain"></i>
-                </div>
-                <div class="col day-of-week Fri">
-                  <i class="fa-solid fa-sun"></i>
-                </div>
-              </div>
-              <div class="row weekday-temperature">
-                <div class="col day-of-week Mon">
-                  <span class="forecast-temperature-max">15°</span
-                  ><span class="forecast-temperature-min"> 9°</span>
-                </div>
-                <div class="col day-of-week Tues">
-                  <span class="forecast-temperature-max">15°</span
-                  ><span class="forecast-temperature-min"> 9°</span>
-                </div>
-                <div class="col day-of-week Wed">
-                  <span class="forecast-temperature-max">15°</span
-                  ><span class="forecast-temperature-min"> 9°</span>
-                </div>
-                <div class="col day-of-week Thurs">
-                  <span class="forecast-temperature-max">15°</span
-                  ><span class="forecast-temperature-min"> 9°</span>
-                </div>
-                <div class="col day-of-week Fri">
-                  <span class="forecast-temperature-max">15°</span
-                  ><span class="forecast-temperature-min"> 9°</span>
+                <div class="row weekday-temperature">
+                  <div class="col day-of-week Mon">
+                    <span class="forecast-temperature-max">15°</span
+                    ><span class="forecast-temperature-min"> 9°</span>
+                  </div>
+                  <div class="col day-of-week Tues">
+                    <span class="forecast-temperature-max">15°</span
+                    ><span class="forecast-temperature-min"> 9°</span>
+                  </div>
+                  <div class="col day-of-week Wed">
+                    <span class="forecast-temperature-max">15°</span
+                    ><span class="forecast-temperature-min"> 9°</span>
+                  </div>
+                  <div class="col day-of-week Thurs">
+                    <span class="forecast-temperature-max">15°</span
+                    ><span class="forecast-temperature-min"> 9°</span>
+                  </div>
+                  <div class="col day-of-week Fri">
+                    <span class="forecast-temperature-max">15°</span
+                    ><span class="forecast-temperature-min"> 9°</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card-footer">
+            <div class="card-footer bg-white">
               <footer>
-                This project was coded by Lauren DeLago and is open-sources on
-                <a href="https://github.com/lcarinad/vanilla-weather-app"
+                Coded by Lauren DeLago and is open-sourced on
+                <a
+                  href="https://github.com/lcarinad/vanilla-weather-app"
+                  target="_blank"
                   >GitHub</a
                 >
                 and hosted on
-                <a href="https://spontaneous-piroshki-c9abee.netlify.app"
+                <a
+                  href="https://spontaneous-piroshki-c9abee.netlify.app"
+                  target="_blank"
                   >Netlify
                 </a>
               </footer>

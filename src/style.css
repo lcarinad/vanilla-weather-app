@@ -10,40 +10,91 @@
   margin-top: 60 auto;
   width: 100%;
 }
-h1 {
-  color: #ff8364;
-  text-align: center;
-  font-family: "Covered By Your Grace", cursive;
-}
-form {
-  display: inline;
-  text-align: left;
-}
-ul {
-  list-style-type: none;
-}
-
 .card {
   margin: 60px auto;
   border-radius: 16px;
   padding: 40px;
 }
+.app-name {
+  color: #ff8364;
+  text-align: center;
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 45px;
+}
+form {
+  display: inline;
+  text-align: left;
+}
+
 .search-city {
   background: #edf7fa;
   border: none;
-
   border-radius: 6px;
   font-size: 16px;
   height: 30px;
   line-height: 20px;
   padding: 15px 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
 .search-button {
   background: #5f6caf;
   border: none;
   font-size: 16px;
   height: 30px;
-
+  color: white;
   width: 200px;
   border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.search-button:hover {
+  background: white;
+  color: #5f6caf;
+  border: 1px solid #5f6caf;
+  transition: all 200ms ease-in-out;
+}
+.card-body {
+  font-family: "Quicksand", sans-serif;
+}
+.card-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #43bfc7;
+}
+
+.temperature {
+  font-size: 40px;
+  font-weight: 500;
+  color: #43bfc7;
+}
+.unit {
+  font-size: 40px;
+  font-weight: 500;
+  color: #43bfc7;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: gray;
+}
+.five-day-forecast {
+  text-align: center;
+}
+.weekday-name {
+  color: #ffb677;
+  font-weight: 500;
+}
+.weekday-temperature {
+  font-weight: 600;
+  color: #552e5a;
+  font-size: larger;
+}
+.forecast-temperature-min {
+  color: #cf7979;
+  font-weight: 400;
+}
+footer {
+  font-size: 12px;
+  background-color: white;
 }
