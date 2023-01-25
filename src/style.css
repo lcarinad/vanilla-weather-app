@@ -56,14 +56,14 @@ form {
   font-family: "Quicksand", sans-serif;
 }
 .card-title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: #43bfc7;
   margin-bottom: 0;
 }
 
 .temperature {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   color: #43bfc7;
   margin: 0;
@@ -76,7 +76,7 @@ form {
   margin: 0;
   padding: 0;
   position: relative;
-  top: -20px;
+  top: -10px;
 }
 ul {
   list-style-type: none;

@@ -44,11 +44,17 @@
             </div>
             <div class="card-body weather-info">
               <div class="row">
-                <div class="col-6">
+                <div class="col-sm-2">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                    alt="cloudy"
+                  />
+                </div>
+                <div class="col-sm-7">
                   <p class="card-title" id="cityElement">Pawtucket</p>
 
                   <ul>
-                    <li id="date">Last updated:</li>
+                    <li id="date"></li>
                     <li><span id="descriptionElement">clear sky</span></li>
                     <li>
                       Humidity:
@@ -61,12 +67,15 @@
                     </li>
                   </ul>
                 </div>
-                <div class="temperature-container d-flex justify-content-end">
-                  <div>
-                    <span class="temperature" id="temperatureElement"> 14</span
-                    ><span class="unit"
-                      ><small>°C |<a href="#"> °F</a> </small></span
-                    >
+                <div class="col-sm-3">
+                  <div class="temperature-container d-flex justify-content-end">
+                    <div>
+                      <span class="temperature" id="temperatureElement">
+                        14</span
+                      ><span class="unit"
+                        ><small>°C |<a href="#"> °F</a> </small></span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
