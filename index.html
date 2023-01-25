@@ -45,20 +45,24 @@
             <div class="card-body weather-info">
               <div class="row">
                 <div class="col-6">
-                  <p class="card-title">Pawtucket</p>
+                  <p class="card-title" id="cityElement">Pawtucket</p>
 
                   <ul>
                     <li>
                       <span class="day-time"> Monday 14:44 </span>
-                      , clear sky
                     </li>
-                    <li>Humidity: <strong>32%</strong></li>
-                    <li>Wind: <strong>8.05km/h</strong></li>
+                    <li><span id="descriptionElement">clear sky</span></li>
+                    <li>
+                      Humidity: <span id="humidity"><strong>32%</strong></span>
+                    </li>
+                    <li>
+                      Wind: <span id="wind"><strong>8.05km/h</strong></span>
+                    </li>
                   </ul>
                 </div>
                 <div class="temperature-container d-flex justify-content-end">
                   <div>
-                    <span class="temperature"> 14</span
+                    <span class="temperature" id="temperatureElement"> 14</span
                     ><span class="unit"
                       ><small>°C |<a href="#"> °F</a> </small></span
                     >

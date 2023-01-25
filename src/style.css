@@ -80,9 +80,13 @@ form {
 }
 ul {
   list-style-type: none;
+  text-transform: capitalize;
   margin: 0;
   padding: 0;
   color: gray;
+}
+ul .humidity-wind {
+  font-weight: bold;
 }
 .five-day-forecast {
   text-align: center;
