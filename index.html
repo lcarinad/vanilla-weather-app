@@ -32,12 +32,14 @@
           <div class="card w-75" id="card">
             <div class="card-header bg-white">
               <p class="app-name">Woof's the Weather?🐶</p>
-              <form>
+              <form id="search-form">
                 <input
-                  type="text"
-                  class="search-city"
+                  type="search"
                   placeholder="Enter a city 🐾🐾"
+                  class="search-city"
+                  id="city-input"
                   autofocus="on"
+                  autocomplete="off"
                 />
               </form>
               <input type="submit" class="search-button" value="search" />
