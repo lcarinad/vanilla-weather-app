@@ -111,3 +111,11 @@ footer {
   font-size: 12px;
   background-color: white;
 }
+.temperature-container .active {
+  color: black;
+  cursor: default;
+}
+
+.temperature-container .active:hover {
+  text-decoration: none;
+}
