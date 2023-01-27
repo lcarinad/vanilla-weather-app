@@ -91,22 +91,7 @@ ul {
 li:first-letter {
   text-transform: capitalize;
 }
-.five-day-forecast {
-  text-align: center;
-}
-.weekday-name {
-  color: #ffb677;
-  font-weight: 500;
-}
-.weekday-temperature {
-  font-weight: 600;
-  color: #552e5a;
-  font-size: larger;
-}
-.forecast-temperature-min {
-  color: #cf7979;
-  font-weight: 400;
-}
+
 footer {
   font-size: 12px;
   background-color: white;
@@ -119,3 +104,18 @@ footer {
 .temperature-container .active:hover {
   text-decoration: none;
 }
+.five-day-forecast {
+  margin-top: 10px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
