@@ -25,11 +25,13 @@ function formatDate() {
     return `Last updated: ${day} ${hours}:${minutes}am`;
   }
 }
-function displayForecast () {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="row">`;
   let days = ["Fri", "Sat", "Sun"];
-  days.forEach(function(day) {forecastHTML = forecastHTML + `
+  let forecastHTML = `<div class="row">`;
+  
+  days.forEach(function (day) {forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class="weather-forecast-date">${day}</div>
   <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" 
@@ -44,11 +46,15 @@ function displayForecast () {
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-
 }
 
 
-
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "f5af1dof4ba8f214e4f3d2f50b4bt770";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function displayTemperature(response) {
  
@@ -75,14 +81,13 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
+  getForecast(response.data.coordinates);
 }
 
 function search(city) {
-  
   let apiKey = "f5af1dof4ba8f214e4f3d2f50b4bt770";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
-  console.log(apiUrl)
 }
 
 function handleSubmit(event) {
@@ -108,10 +113,7 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.querySelector("#temperatureElement");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-
 displayForecast();
-
-
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
