@@ -95,6 +95,11 @@ li:first-letter {
 footer {
   font-size: 12px;
   background-color: white;
+  position: absolute;
+  bottom: 10;}
+
+.card-footer {
+ padding: 0%;
 }
 .temperature-container .active {
   color: black;
@@ -118,4 +123,3 @@ footer {
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
-
