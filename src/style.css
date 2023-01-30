@@ -96,9 +96,9 @@ footer {
   font-size: 12px;
   background-color: white;
   position: absolute;
-  bottom: 10;}
+  bottom: 0;}
 
-.card-footer {
+  .card-footer {
  padding: 0%;
 }
 .temperature-container .active {
